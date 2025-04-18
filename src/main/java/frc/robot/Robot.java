@@ -17,6 +17,8 @@ public class Robot extends TimedRobot {
   private static final int kFrontRightChannel = 1;
   private static final int kRearRightChannel = 0;
 
+  private static final int kexample = 6;
+
   private static final int kJoystickChannel = 0;
 
   private final MecanumDrive m_robotDrive;
@@ -28,6 +30,8 @@ public class Robot extends TimedRobot {
     PWMSparkMax rearLeft = new PWMSparkMax(kRearLeftChannel);
     PWMSparkMax frontRight = new PWMSparkMax(kFrontRightChannel);
     PWMSparkMax rearRight = new PWMSparkMax(kRearRightChannel);
+
+    PWMSparkMax example = new PWMSparkMax(kexample);
 
     // Invert the right side motors.
     // You may need to change or remove this to match your robot.
